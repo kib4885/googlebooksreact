@@ -38,10 +38,10 @@ class Search extends Component {
         API.saveBook({
             googleId: book.id,
             title: book.volumeInfo.title,
-            link: book.volumeInfo.infoLink,
             authors: book.volumeInfo.authors,
             description: book.volumeInfo.description,
-            image: book.volumeInfo.imageLinks.thumbnail
+            infoLink: book.volumeInfo.infoLink,
+            thumbnail: book.volumeInfo.imageLinks.thumbnail,
         }).then(() => this.loadBooks());
     };
 

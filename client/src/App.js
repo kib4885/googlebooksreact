@@ -5,6 +5,7 @@ import Search from "./pages/search";
 import Nav from "./components/Nav";
 import Jumbotron from "./components/Jumbotron";
 import { Container, Row, Col } from "./components/Grid";
+import "./style.css";
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
         <Nav />
         <Container>
         <Jumbotron>
-              <h1>React Google Book Search</h1>
+              <h1 id="text">React Google Book Search</h1>
               <h3>Search for and save books of interest</h3>
             </Jumbotron>
             </Container>

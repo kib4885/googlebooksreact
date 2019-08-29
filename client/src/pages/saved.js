@@ -9,7 +9,7 @@ class Saved extends Component {
         books: []
     };
     componentDidMount() {
-        this.getSaved();
+        this.loadsavedbooks();
     }
     loadsavedbooks = () => {
         API.getSaved()
@@ -31,25 +31,28 @@ class Saved extends Component {
                     <Col size="md-12">
                         <Card title="Saved Books">
                             {this.state.books.lengh ? (
-                                <BookList>
-                                    {this.state.books.map(book => (
-                                        <BookListItem
-                                            key={book.id}
-                                            title={book.volumeInfo.title}
-                                            authors={book.volumeInfo.authors}
-                                            description={book.volumeInfo.description}
-                                            infoLink={book.volumeInfo.infoLink}
-                                            thumbnail={book.volumeInfo.imageLinks.thumbnail}
-                                            Button={() => (
-                                                <button onClick={() => this.savedBook(book.id)}>
-                                                    Delete
-</button>
-                                            )}
-                                        />
-                                    ))}
-                                </BookList>
+                                <h2 className="text-center">No Saved Books</h2>
                             ) : (
-                                    <h2 className="text-center">No Saved Books</h2>
+                                    <BookList>
+                                        <h2 className="text-center">No Saved Books</h2>
+                                        {this.state.books.map(book => (
+
+                                            <BookListItem
+                                                key={book.id}
+                                                title={book.volumeInfo.title}
+                                                authors={book.volumeInfo.authors}
+                                                description={book.volumeInfo.description}
+                                                infoLink={book.volumeInfo.infoLink}
+                                                thumbnail={book.volumeInfo.imageLinks.thumbnail}
+                                                Button={() => (
+                                                    <button onClick={() => this.handledeletebook(book.id)}>
+                                                        Delete
+</button>
+                                                )}
+                                            />
+                                        ))}
+                                    </BookList>
+
                                 )}
                         </Card>
                     </Col>
