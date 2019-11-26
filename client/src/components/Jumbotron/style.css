@@ -1,13 +1,7 @@
 .jumbotron {
   min-height: 300px;
-  padding-top: 80px;
+  padding-top: 100px;
   margin-top: 20px;
   color: black;
-  background-color: white;
-  font-family: 'Anton', sans-serif;
- 
- opacity: .90
-}
-#text{
-  font-size: 75px;
+  background-color: transparent
 }
