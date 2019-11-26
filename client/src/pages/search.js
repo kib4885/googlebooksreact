@@ -61,20 +61,12 @@ class Search extends Component {
             <Container>
                 <Row>
                     <Col size="md-12">
-                        <Jumbotron>
-                            <h1 className="text-center">
-                                <strong>(React) Google Books Search</strong>
-                            </h1>
-                            <h2 className="text-center">Search for and Save Books of Interest.</h2>
-                        </Jumbotron>
-                        </Col>
-                        <Col size="md-12">
                         <Card title="Book Search">
-                          <Form
-                           handleInputChange={this.handleInputChange}
-                           handleFormSubmit={this.handleFormSubmit}
-                           q={this.state.q}
-                         />
+                            <Form
+                                handleInputChange={this.handleInputChange}
+                                handleFormSubmit={this.handleFormSubmit}
+                                q={this.state.q}
+                            />
                         </Card>
                     </Col>
                 </Row>

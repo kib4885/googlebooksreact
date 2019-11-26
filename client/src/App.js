@@ -12,7 +12,12 @@ function App() {
     <Router>
       <div>
         <Nav />
-    
+        <Container>
+        <Jumbotron>
+              <h1 id="text">React Google Book Search</h1>
+              <h3>Search for and save books of interest</h3>
+            </Jumbotron>
+            </Container>
         <Switch>
           <Route exact path="/" component={Search} />
           <Route exact path="/saved" component={Saved} />
