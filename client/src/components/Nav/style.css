@@ -3,7 +3,7 @@
   background-color: transparent;
   color: black;
 };
-#nav {
+a-navbar-brand {
   font-size: 31px;
   color: black;
   font-family: 'Calistoga', cursive;
