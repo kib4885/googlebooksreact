@@ -4,7 +4,6 @@ import Card from "../components/Card";
 import { Col, Row, Container } from "../components/Grid";
 import Input from "../components/Input";
 import { BookList, BookListItem } from "../components/Booklist";
-import Button from "../components/Button";
 import Form from "../components/Form";
 import Jumbotron from "../components/Jumbotron";
 
@@ -86,9 +85,12 @@ class Search extends Component {
                                                 infoLink={book.volumeInfo.infoLink}
                                                 thumbnail={book.volumeInfo.imageLinks.thumbnail}
                                                 Button={() => (
-                                                    <button onClick={() => this.handlesavedbooks(book.id)}>
-                                                        Save Book
-                                                </button>
+                                                    <button
+                                                      onClick={() => this.handlesavedbooks(book.id)}
+                                                      className="btn btn-primary ml-2"
+                                                    >
+                                                      Save
+                                                    </button>
                                                 )}
                                             />
                                         )
