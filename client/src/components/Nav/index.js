@@ -4,7 +4,7 @@ import "./style.css";
 function Nav() {
   return (
     <nav className="navbar" className="navbar navbar-expand-lg">
-  <a className="navbar-brand"  href="/">Google Books</a>
+  <a id="bar" className="navbar-brand"  href="/">Google Books Search</a>
   <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span className="navbar-toggler-icon"></span>
   </button>

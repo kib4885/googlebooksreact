@@ -9,6 +9,14 @@ a-navbar-brand {
   font-family: 'Calistoga', cursive;
 } 
 
-a {
-  font-size: 20px;
+#bar {
+  font-size: 30px;
+  color: black;
+  font-family: 'Calistoga', cursive;
+}
+
+a{
+  font-size: 25px;
+  color: black;
+  font-family: 'Calistoga', cursive;
 }
