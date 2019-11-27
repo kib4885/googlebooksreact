@@ -2,10 +2,8 @@ import React, { Component } from "react";
 import API from "../utils/API";
 import Card from "../components/Card";
 import { Col, Row, Container } from "../components/Grid";
-import Input from "../components/Input";
 import { BookList, BookListItem } from "../components/Booklist";
 import Form from "../components/Form";
-import Jumbotron from "../components/Jumbotron";
 
 class Search extends Component {
     state = {
@@ -72,7 +70,7 @@ class Search extends Component {
                 <Row>
                     <Col size="xs-12">
                         {!this.state.books.length ? (
-                            <h1 className="text-center">No Books to Display</h1>
+                            <h1 id="display" className="text-center">No Books to Display</h1>
                         ) : (
                                 <BookList>
                                     {this.state.books.map(book => {

@@ -1,3 +1,11 @@
 #text{
     font-size: 75px
 }
+
+#display {
+    font-size: 45px;
+    color: #2e597b;
+    padding-top: 27px;
+    padding-left: 151px;
+    font-family: 'Calistoga', cursive;
+}
