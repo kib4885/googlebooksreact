@@ -1,7 +1,14 @@
 .navbar{
   margin-bottom: 0;
-  background-color: transparent
+  background-color: transparent;
+  color: black;
 };
-a {
-  color: black
+#nav {
+  font-size: 31px;
+  color: black;
+  font-family: 'Calistoga', cursive;
 } 
+
+a {
+  font-size: 20px;
+}
